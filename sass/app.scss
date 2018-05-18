@@ -1,0 +1,16 @@
+// general styles
+
+body {
+  padding: 0;
+  margin: 0;
+}
+
+// Import fonts
+
+@import url('https://fonts.googleapis.com/css?family=Cutive+Mono');
+
+// Import page sections
+
+@import 'variables';
+@import 'nav';
+@import 'hero';
