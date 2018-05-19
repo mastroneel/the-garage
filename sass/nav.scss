@@ -1,0 +1,153 @@
+// tabs
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.transformer-tabs {
+  ul {
+    // border-bottom: 5px solid white;
+    display: inline-flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 15px;
+  }
+  li {
+    color: #fff;
+    font-size: 26px;
+    line-height: 80px;
+    margin-left: 15px;
+    display: inline-block;
+    padding: 0;
+    vertical-align: bottom;
+    img {
+      height: 100px;
+      margin-left: 0;
+      margin-right: 25px;
+    }
+    &:nth-child(2) .active {
+      color: $yellow;
+      border-bottom-color: $yellow;
+    }
+    &:nth-child(3) .active {
+      color: $turquoise;
+      border-bottom-color: $turquoise;
+    }
+    &:nth-child(4) .active {
+      color: $pink;
+      border-bottom-color: $pink;
+    }
+    &:nth-child(5) .active {
+      color: $yellow;
+      border-bottom-color: $yellow;
+    }
+    &:nth-child(6) .active {
+      color: $turquoise;
+      border-bottom-color: $turquoise;
+    }
+    &:nth-child(7) .active {
+      color: $pink;
+      border-bottom-color: $pink;
+    }
+    &:nth-child(8) .active {
+      color: $yellow;
+      border-bottom-color: $yellow;
+    }
+  }
+  a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    // padding: 0.5rem;
+    &.active {
+      border-bottom: 5px solid transparent;
+      position: relative;
+      bottom: -5px;
+    }
+  }
+  @media (max-width: 700px) {
+    ul {
+      border-bottom: 0;
+      overflow: hidden;
+      position: relative;
+      // background: #666; /* fallback */
+      // background: linear-gradient(#666, #222);
+      &::after {
+        content: "☰";
+        position: absolute;
+        top: 8px;
+        right: 15px;
+        z-index: 2;
+        pointer-events: none;
+      }
+      &.open {
+        a {
+          position: relative;
+          display: block;
+        }
+      }
+    }
+    li {
+      display: block;
+    }
+    a {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      &.active {
+        border: 0;
+        z-index: 1;
+        // background: #666; /* fallback */
+        // background: linear-gradient(#666, #222);
+      }
+    }
+  }
+}
+
+.tabs {
+  > div {
+    display: none;
+    padding: 1rem;
+    &:nth-of-type(1) {
+      background: $turquoise-overlay;
+    }
+    &:nth-of-type(2) {
+      background: $pink-overlay;
+    }
+    &:nth-of-type(3) {
+      background: $yellow-overlay;
+    }
+    &:nth-of-type(4) {
+      background: $turquoise-overlay;
+    }
+    &:nth-of-type(5) {
+      background: $pink-overlay;
+    }
+    &:nth-of-type(6) {
+      background: $yellow-overlay;
+    }
+    &:nth-of-type(7) {
+      background: $turquoise-overlay;
+    }
+  }
+  > .active {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+  }
+}
