@@ -1,24 +1,7 @@
 // tabs
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .transformer-tabs {
   ul {
-    // border-bottom: 5px solid white;
     display: inline-flex;
     list-style-type: none;
     padding: 0;
@@ -149,5 +132,40 @@
     display: block;
     width: 80%;
     margin: 0 auto;
+  }
+}
+
+
+// *************
+// Media queries
+// *************
+
+@media (max-width: 1250px) {
+  .transformer-tabs {
+    ul {
+      li {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: 880px) {
+  .transformer-tabs {
+    ul {
+      line-height: 80px;
+      li {
+        font-size: 13px;
+        img {
+          height: 80px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 760px) {
+  .transformer-tabs {
+    visibility: hidden;
   }
 }

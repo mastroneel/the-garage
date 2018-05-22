@@ -2,6 +2,11 @@
 @import url("https://fonts.googleapis.com/css?family=Cutive+Mono");
 @import url("https://fonts.googleapis.com/css?family=Overpass+Mono:600");
 @import url("https://fonts.googleapis.com/css?family=Bungee+Inline");
+@import url("https://fonts.googleapis.com/css?family=Righteous");
+@import url("https://fonts.googleapis.com/css?family=Monoton");
+@import url("https://fonts.googleapis.com/css?family=Cabin+Sketch");
+@import url("https://fonts.googleapis.com/css?family=Londrina+Solid");
+@import url("https://fonts.googleapis.com/css?family=Zilla+Slab+Highlight");
 body {
   padding: 0;
   margin: 0; }
@@ -102,6 +107,19 @@ body {
   width: 80%;
   margin: 0 auto; }
 
+@media (max-width: 1250px) {
+  .transformer-tabs ul li {
+    font-size: 16px; } }
+@media (max-width: 880px) {
+  .transformer-tabs ul {
+    line-height: 80px; }
+    .transformer-tabs ul li {
+      font-size: 13px; }
+      .transformer-tabs ul li img {
+        height: 80px; } }
+@media (max-width: 760px) {
+  .transformer-tabs {
+    visibility: hidden; } }
 .hero {
   font-family: 'Overpass Mono', monospace;
   text-align: center;
@@ -119,7 +137,7 @@ body {
   background-repeat: no-repeat;
   background-position: bottom; }
   .hero h2, .hero h3 {
-    font-family: 'Bungee Inline';
+    font-family: 'Zilla Slab Highlight';
     text-transform: uppercase;
     margin: 15px;
     padding: 0; }
